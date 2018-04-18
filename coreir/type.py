@@ -3,11 +3,7 @@ import ctypes as ct
 from coreir.base import CoreIRType
 from coreir.lib import libcoreir_c
 from collections import namedtuple
-
-class BitVector:
-    def __init__(self, width=None, val=None):
-        self.width = width
-        self.val = val
+from bit_vector.bit_vector import BitVector
 
 class COREType(ct.Structure):
     pass
